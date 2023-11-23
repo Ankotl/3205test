@@ -1,0 +1,92 @@
+{
+  "extends": ["stylelint-config-recommended-scss"],
+  "plugins": ["stylelint-declaration-block-no-ignored-properties"],
+  "rules": {
+    "selector-attribute-quotes": "always",
+    "scss/operator-no-unspaced": true,
+    "plugin/declaration-block-no-ignored-properties": true,
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ],
+    "font-family-no-duplicate-names": true,
+    "font-family-no-missing-generic-family-keyword": true,
+    "font-weight-notation": "numeric",
+    "function-calc-no-unspaced-operator": true,
+    "function-linear-gradient-no-nonstandard-direction": true,
+    "function-name-case": "lower",
+    "number-max-precision": 6,
+    "string-no-newline": true,
+    "length-zero-no-unit": true,
+    "time-min-milliseconds": [
+      100,
+      {
+        "ignore": ["delay"]
+      }
+    ],
+    "unit-no-unknown": true,
+    "property-disallowed-list": ["text-rendering"],
+    "property-no-unknown": true,
+    "declaration-block-no-duplicate-properties": true,
+    "declaration-block-no-shorthand-property-overrides": true,
+    "declaration-block-single-line-max-declarations": 1,
+    "rule-empty-line-before": [
+      "always",
+      {
+        "ignore": ["after-comment", "first-nested"]
+      }
+    ],
+    "media-feature-name-no-vendor-prefix": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ],
+    "at-rule-disallowed-list": ["extend"],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "ignoreAtRules": ["import", "include", "function", "return", "if", "else", "mixin"],
+        "ignore": ["after-comment", "first-nested"]
+      }
+    ],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "/^at-/",
+          "/^mixin/",
+          "/^include/",
+          "/^if/",
+          "/^else/",
+          "/^function/",
+          "/^return/",
+          "/^each/",
+          "/^while/",
+          "/^for/"
+        ]
+      }
+    ],
+    "comment-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested"],
+        "ignore": ["stylelint-commands"]
+      }
+    ],
+    "comment-no-empty": true,
+    "comment-whitespace-inside": "always",
+    "no-duplicate-selectors": true,
+    "no-descending-specificity": null,
+    "no-duplicate-at-import-rules": true,
+    "shorthand-property-no-redundant-values": true,
+    "selector-nested-pattern": [
+      "^(?!&-\\w)",
+      {
+        "message": "Вкладывать такой селектор нельзя"
+      }
+    ]
+  }
+}
