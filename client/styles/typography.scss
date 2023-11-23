@@ -1,0 +1,73 @@
+p {
+  hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+  hyphenate-limit-lines: 2;
+  hyphenate-limit-last: always;
+  hyphenate-limit-zone: 8%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1;
+}
+
+h1,
+h2 {
+  font-size: 80px;
+  letter-spacing: -1.6px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 24px;
+  letter-spacing: 2.88px;
+  text-transform: uppercase;
+}
+
+@media (max-width: $desktop) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: $mobile) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 28px;
+    letter-spacing: -0.56px;
+    line-height: 1.4;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 14px;
+    letter-spacing: 1.68px;
+  }
+}

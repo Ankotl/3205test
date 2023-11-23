@@ -1,0 +1,31 @@
+@import 'variables';
+@import 'scafolding';
+@import 'typography';
+@import 'breakpoints';
+@import 'mixins';
+
+body {
+  position: relative;
+  background: var(--body-bg);
+  font-family:
+    var(--font-main),
+    -apple-system,
+    sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--light);
+  text-align: left;
+  cursor: default;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings:
+    'pnum' on,
+    'lnum' on;
+  text-wrap: balance;
+}
+
+input {
+  font-feature-settings:
+    'pnum' on,
+    'lnum' on;
+}

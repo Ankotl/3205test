@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    eslint: {
+  eslint: {
     dirs: ['app', 'components', 'utils', 'packages', 'hooks', 'hocs', 'redux'],
   },
   sassOptions: {
@@ -9,6 +9,7 @@ const nextConfig = {
       @import 'styles/breakpoints.scss';
       @import 'styles/mixins.scss';
     `,
-  },}
+  },
+}
 
 module.exports = nextConfig
